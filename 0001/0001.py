@@ -13,12 +13,16 @@ import string
 # 	yhm = ''.join(s)
 #
 # #print yhm
-# print string.ascii_letters
-# print string.digits
+
+
+
+
+# print string.ascii_letters   #表示所有大小写字母
+# print string.digits    #表示所有数据
 
 # 一下是列表代码
 mlc = []
-for a in range(200):
+for a in range(200):  # 循环200次
 	mlc.append(''.join(random.sample((string.ascii_letters + string.digits), 20)))
 
 print mlc
@@ -29,6 +33,6 @@ a = 0
 for m in range(200):
 	a = a + 1
 	m = ''.join(random.sample((string.ascii_letters + string.digits), 20))
-	two[a] = m
+	two[a] = m  # 字典的添加方式 a[key]=value  具体显示如下: a= {key:'value'}
 
 print two
